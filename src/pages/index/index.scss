@@ -1,5 +1,6 @@
 .index {
   display: flex;
+  height: 100%;
   justify-content: center;
   flex-flow: column;
 }
@@ -13,7 +14,7 @@
 .index-card {
   margin: 20px 5%;
   border: 1px solid #ddd;
-  border-radius: 4px;
+  border-radius: 10px;
   min-height: 96px;
   padding: 10px;
   display: -webkit-box;
@@ -40,7 +41,7 @@
 }
 .form-input {
   flex: 0 0 45%;
-  border: 1px solid #ddd;
+  border: 1px solid #888;
   border-radius: 4px;
   margin: 0 3%;
   min-height: 36px;
@@ -84,7 +85,7 @@
 .author {
   color: #ddd;
   font-size: 30rem;
-  font-weight: 600;
+  font-weight: 400;
 }
 .pattern {
   text-align: center;
@@ -99,4 +100,117 @@
   font-size: 30rem;
   color: red;
   font-weight: 600;
+}
+.errorHint {
+  position: absolute;
+  width: 80%;
+  margin: 0 auto;
+  z-index: 9;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  padding: 10px;
+  border-radius: 6px;
+  background-color: #ff0000;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+.errorText {
+  color: #fff;
+}
+
+.result-bg {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  z-index: 9;
+  background-color: rgba($color: #66cd00, $alpha: 1)
+}
+.result-card {
+  position: relative;
+  margin: 20px 4%;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  min-height: 96px;
+  padding: 10px;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  background-color: #fff;
+}
+
+.semi-circle{
+  width:20px;
+  height:40px; 
+  background-color:rgba($color: #000000, $alpha: 0.25);
+  border-radius:0 50px 50px 0 ; /* 左上、右上、右下、左下 */
+}
+.logo-container {
+  position: absolute;
+  top: 0;
+  left: 50%;
+  margin-left: -100px;
+  margin-top: -100px;
+  background-color: #fff;
+  padding: 10px;
+  border-radius: 50%;
+}
+.zhou-logo {
+  width: 200px;
+  height: 200px;
+  border-radius: 50%; 
+}
+.result-content {
+  text-align: center;
+  margin-top: 120px;
+}
+.close-result {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  margin-top: 20px;
+  padding: 20px 0;
+  border-top: 1px dashed #888;
+}
+.save-img-text {
+  font-size: 36rem;
+  color: #666;
+}
+.originArticle {
+  font-size: 30px;
+  text-align: center;
+  color: #666;
+  font-weight: 400;
+}
+.result-title {
+  font-size: 60px;
+  font-weight: 600;
+}
+.advice-style {
+  display: block;
+  text-align: center;
+}
+.canvas-style {
+  position: absolute;
+  top: -150%;
+  left: -250%;
+  transform: translate(-50%, -50%);
+  z-index: -99;
+  width: 92%;
+  height: 94%;
+  background: transparent;
+}
+.canvas-bg {
+  position:absolute;
+  width:100%;
+  height:100%;
+  background:rgba(0, 0, 0, 0.85);
+  z-index:10;
 }
